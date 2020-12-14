@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ref="ru">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Калькулятор</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script type='text/javascript'>
+		function inputf(numb) {
+			document.form.vvod.value += numb;
+		}
+		function clrf() {
+			var numb = document.form.vvod.value;
+			document.form.vvod.value = numb.substring(0,numb.length-1);
+		}
+		function cleanf() {
+			document.form.vvod.value = ' ';
+		}
+		function ravnof() {
+			var numb = document.form.vvod.value;
+			if (numb) {
+				document.form.vvod.value = eval(numb);
+				return numb;
+			}
+		}
+	</script>
+	</head>
+	<body>
+		<div class="container_button">
+			<div class="item input">
+				<form name="form">
+					<input type="string" name="vvod" readonly>
+				</form>
+			</div>
+			<div class="item but0" onclick="cleanf"><b>C</b></div>
+			<div class="item clr" onclick="clrf()">&larr;</div>
+			<div class="item" onclick="inputf('*')">&times;</div>
+			<div class="item" onclick="inputf('/')">&divide;</div>
+			<div class="item" onclick="inputf('+')">+</div>
+			<div class="item" onclick="inputf('-')">-</div>
+			<div class="item" onclick="inputf('7')">7</div>
+			<div class="item" onclick="inputf('8')">8</div>
+			<div class="item" onclick="inputf('9')">9</div>
+			<div class="item" onclick="inputf('(')">(</div>
+			<div class="item" onclick="inputf('4')">4</div>
+			<div class="item" onclick="inputf('5')">5</div>
+			<div class="item" onclick="inputf('6')">6</div>
+			<div class="item" onclick="inputf(')')">)</div>
+			<div class="item" onclick="inputf('1')">1</div>
+			<div class="item" onclick="inputf('2')">2</div>
+			<div class="item" onclick="inputf('3')">3</div>
+			<div class="item ravno" onclick="ravnof()">=</div>
+			<div class="item zero" onclick="inputf('0')">0</div>
+			<div class="item" onclick="inputf('.')">.</div>
+		</div>
+	</body>
+</html>
