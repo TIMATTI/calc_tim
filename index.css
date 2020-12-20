@@ -45,6 +45,6 @@ input {
 	grid-column: 4;
 	grid-row: 6/8;
 	background-color: #81FF00;
-	color: #000;
+	color: #FFF;
 }
 .zero {grid-column: 1/3}
