@@ -44,7 +44,7 @@ input {
 	height: 20px;
 	}
 .clr {
-	grid-columns: 4/-1;
+	grid-column: 3/-1;
 	height: 20px;
 	}
 .ravno {
