@@ -35,7 +35,7 @@ input {
 	color: #BBB;
 	}
 .input {
-	grid-column: 1/0;
+	grid-column: 1;
 	padding: 0px;
 	}
 .but0 {grid-column: 1/4}
