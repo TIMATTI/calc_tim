@@ -25,9 +25,9 @@ body {
 	font-size: 23px;
 	cursor: pointer;
 	}
-form {max-width: 100%}
+form {max-width: 100px}
 input {
-	width: 100%;
+	width: 100px;
 	height: 65px;
 	border: none;
 	font-size: 30px;
