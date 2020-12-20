@@ -36,10 +36,10 @@ input {
 	color: #BBB;
 	}
 .input {
-	/*grid-column: 1/-1;*/
+	grid-column: 1/-1;
 	padding: 0px;
 	}
-.but0 {grid-column: 1/4}
+.but0 {grid-column: 1/3}
 .clr {grid-columns: 4/-1}
 .ravno {
 	grid-column: 4;
